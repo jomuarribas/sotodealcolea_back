@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const sotoDB = async () => {
+const sotoDataBase = async () => {
   try {
     await mongoose.connect(process.env.DB_URL);
     console.log("Connected to DDBB");
@@ -9,4 +9,4 @@ const sotoDB = async () => {
   }
 }
 
-module.exports = { sotoDB };
+module.exports = { sotoDataBase };
