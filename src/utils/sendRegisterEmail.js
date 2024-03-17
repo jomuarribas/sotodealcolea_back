@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const sendRegisterEmail = async (email, name) => {
   try {
     const token = jwt.sign({ email }, "secret", { expiresIn: "1h" })
-    const verificationLink = `http://localhost:5173/verification/${token}`
+    const verificationLink = `http://sotodealcolea.netlify.app/verification/${token}`
 
     const transporter = nodemailer.createTransport({
       host: 'authsmtp.securemail.pro',
