@@ -3,11 +3,11 @@ require("dotenv").config();
 const express = require("express");
 const cloudinary = require("cloudinary").v2;
 const cors = require("cors");
-const { sotoDb } = require("./src/config/sotoDb");
 const usersRoutes = require("./src/api/routes/user");
 const residentialsRoutes = require("./src/api/routes/residential");
 const incidentsRoutes = require("./src/api/routes/incident");
 const expensesRoutes = require("./src/api/routes/expense");
+const { sotoDb } = require("./src/config/sotoDb");
 
 const app = express();
 
