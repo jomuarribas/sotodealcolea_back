@@ -7,11 +7,11 @@ const usersRoutes = require("./src/api/routes/user");
 const residentialsRoutes = require("./src/api/routes/residential");
 const incidentsRoutes = require("./src/api/routes/incident");
 const expensesRoutes = require("./src/api/routes/expense");
-const { sotoDb } = require("./src/config/sotoDb");
+const { sotoDB } = require("./src/config/sotoDB");
 
 const app = express();
 
-sotoDb()
+sotoDB()
 
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
