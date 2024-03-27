@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 const receiveHelpEmail = async (email, residential, subject, message, completName) => {
   try {
     const transporter = nodemailer.createTransport({
-      host: 'authsmtp.securemail.pro',
+      host: 'webmailsmtp.register.it',
       port: 465,
       secure: true,
       auth: {

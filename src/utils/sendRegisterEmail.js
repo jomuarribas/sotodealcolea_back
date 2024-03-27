@@ -7,7 +7,7 @@ const sendRegisterEmail = async (email, name) => {
     const verificationLink = `http://sotodealcolea.netlify.app/verification/${token}`
 
     const transporter = nodemailer.createTransport({
-      host: 'authsmtp.securemail.pro',
+      host: 'webmailsmtp.register.it',
       port: 465,
       secure: true,
       auth: {
