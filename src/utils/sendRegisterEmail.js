@@ -8,7 +8,7 @@ const sendRegisterEmail = async (email, name) => {
 
     const transporter = nodemailer.createTransport({
       host: 'webmailsmtp.register.it',
-      port: 465,
+      port: 25,
       secure: true,
       auth: {
         user: process.env.REG_EMAIL,

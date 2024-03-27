@@ -4,7 +4,7 @@ const receiveFormalitieEmail = async (email, residential, formalitie, message, c
   try {
     const transporter = nodemailer.createTransport({
       host: 'webmailsmtp.register.it',
-      port: 465,
+      port: 25,
       secure: true,
       auth: {
         user: process.env.REG_EMAIL,
