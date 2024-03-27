@@ -3,8 +3,8 @@ const nodemailer = require("nodemailer");
 const receiveFormalitieEmail = async (email, residential, formalitie, message, completName) => {
   try {
     const transporter = nodemailer.createTransport({
-      host: 'webmailsmtp.register.it',
-      port: 25,
+      host: 'authsmtp.securemail.pro',
+      port: 465,
       secure: true,
       auth: {
         user: process.env.REG_EMAIL,
